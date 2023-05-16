@@ -1,0 +1,19 @@
+.dashboard-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: var(--bgColor);
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px grey;
+    margin: 10px;
+}
+
+.ul-dashboard {
+    position: absolute;
+    /* top: 0; */
+    /* right: 0; */
+    justify-content: center;
+    
+}

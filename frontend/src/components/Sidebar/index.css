@@ -1,0 +1,17 @@
+.ul-sidebar {
+    overflow-y: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.sidebar {
+    position: relative;
+    /* width: auto; */
+    height: 100%;
+    display: flex;
+    background: var(--bgColor);
+    /* overflow: hidden; */
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px grey;
+    /* margin: 10px; */
+}
