@@ -1,9 +1,8 @@
 import './index.css'
 import { useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { IconContext } from 'react-icons'
-import { useEffect, useState } from 'react'
+import { IconContext } from 'react-icons';
+import { useEffect, useState } from 'react';
+import searchPic from '../../assets/img/input_search.png';
 
 function Typeahead({ data }) {
     const navigate = useNavigate();
@@ -35,27 +34,15 @@ function Typeahead({ data }) {
         navigate(`/country/${value}`);
     }
 
-    function clearText() {
-        setInputSearch("")
-        setFilterSearch([])
-    }
-
     return (
-        <div className='search bg-white'>
-            {/* <div className='flex items-center rounded-md search-div'>
-                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <FontAwesomeIcon className="text-light-green test-lg block float-left cursor-pointer mt-1.5 ml-2" icon={faSearch} />
-                </div>
-
-                <input type={"search"} placeholder='Where do you want to go?' className="search-input w-max text-base bg-transparent text-dark-purple focus:outline-none" value={inputSearch} onChange={handleFilter} />
-                <input type="text" className="block border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none dark:placeholder-gray-399 " placeholder="        Where do you want to go?" value={inputSearch} onChange={handleFilter}></input>
-            </div> */}
-
+        <div className='absolute search bg-transparent'>
             <div className="relative w-96">
-                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <div className="absolute inset-y-0 right-0 flex items-center pl-3 pointer-events-none">
+                    <img className="text-gray-500 dark:text-gray-400 mr-8" src={searchPic} width={40} height={20} alt='Input Search'></img>
                 </div>
-                <input type="search" id="default-search" className="block focus:outline-none w-full p-3 pl-10 text-sm text-gray-900 border rounded-lg dark:placeholder-gray-400 " placeholder="Where do you want to go?" value={inputSearch} onChange={handleFilter}></input>
+                <div>
+                    <input type="search" id="default-search" className="block focus:outline-none w-full p-3 pl-6 text-sm text-gray-900 border rounded-full dark:placeholder-gray-400" placeholder="Where do you want to go?" value={inputSearch} onChange={handleFilter}></input>
+                </div>
             </div>
 
             {filterSearch.length !== 0 &&

@@ -12,7 +12,9 @@ module.exports = {
         "light-white": "rgba(255, 255, 255, 0.18)",
         "orange": "#ff5533",
         "light-green": "#b4d4d4",
-        "dark-green": "#0c5c74"
+        "dark-green": "#0c5c74",
+        "sidebar-white": "#FAFAFA",
+        "lemon": "#E2D980"
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -1,0 +1,21 @@
+.review-saves-card {
+    /* position: absolute; */
+    width: 385px;
+    height: 265px;
+    left: 600px;
+    top: 267px;
+    background: #E2D980;
+    border-radius: 15px;
+}
+
+.div-h1-review-saves-card {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.h1-review-saves-card {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+}

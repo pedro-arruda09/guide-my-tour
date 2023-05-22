@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, Sequelize } = require('sequelize');
 const bcryptjs = require('bcryptjs');
 
 class User extends Model {
@@ -19,6 +19,10 @@ class User extends Model {
       password: {
         type: DataTypes.VIRTUAL,
         defaultValue: '',
+      },
+      birth_country: {
+        type: Sequelize.STRING,
+        defaultValue: ''
       },
       birth_date: {
         type: DataTypes.DATEONLY,

@@ -1,0 +1,15 @@
+.explore-card-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.explore-card {
+    width: 509px;
+    height: 292px;
+    background-color: transparent;
+    left: 85px;
+}
+
+.img-explore-card {
+    height: auto;
+}

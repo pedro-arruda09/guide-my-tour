@@ -22,6 +22,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
+      birth_country: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       birth_date: {
         type: Sequelize.DATEONLY,
         allowNull: false
@@ -47,11 +51,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    /**
-     * Add reverting commands here.
-     *
-     * Example:
-     * await queryInterface.dropTable('users');
-     */
+    await queryInterface.dropTable('users');
   }
 };

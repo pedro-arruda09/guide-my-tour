@@ -1,3 +1,34 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
+.map {
+    width: 330px;
+    height: 330px;
+    border-radius: 20px;
+    /* left: 280px; */
+    transform: translate(175%, 5%);
+    /* position: absolute; */
+}
+
+.country-card {
+    position: absolute;
+    width: 930px;
+    height: 364px;
+    /* left: 350px; */
+    top: 110px;
+}
+
+.country-flag {
+    height: 364px;
+    width: 930px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.search-category {
+    margin-top: 310px;
+    left: 110px;
+}
+
+.button-category {
+    width: 170px;
+    height: 75px;
+    border: 1px solid #212121;
 }
